@@ -26,3 +26,7 @@ variable "environment" {
 variable "product" {
   description = "the product"
 }
+
+variable "vpc_id" {
+  description = "vpc id"
+}

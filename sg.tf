@@ -2,7 +2,7 @@ module "mysg" {
   source          = "app.terraform.io/mt5225/sg/aws"
   name            = "${var.environment}-mysg"
   version         = "0.0.1"
-  vpc_id          = module.network.vpc_id
+  vpc_id          = var.vpc_id
 
   # create a self referancing rule for glue access
   sg_inbound_self = [
