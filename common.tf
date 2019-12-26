@@ -9,3 +9,20 @@ variable "env_tag_map" {
     dr   = "dr"
   }
 }
+
+variable "account" {
+  description = "name of the aws account"
+}
+
+variable "created_by" {
+  description = "who created me?"
+  default     = "terraform"
+}
+
+variable "environment" {
+  description = "environment name containing products-environment-region"
+}
+
+variable "product" {
+  description = "the product"
+}

@@ -27,8 +27,8 @@ module "mysg" {
     CreatedBy   = var.created_by
     Product     = var.product
     Environment = var.env_tag_map[element(split("-", var.environment), 1)]
-    Role        = "petstore-bi"
-    Stack       = "ops"
+    Role        = "petstore-etl-sg"
+    Stack       = "etl"
     ServerType  = "Application"
     Module      = "aws-sg"
     Class       = "Low"
