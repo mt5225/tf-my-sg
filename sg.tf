@@ -7,9 +7,14 @@ module "mysg" {
   # create a self referancing rule for glue access
   sg_inbound_self = [
     {
-      description = "my-sg"
-      start       = "0"
-      end         = "65535"
+      description = "ssh"
+      start       = "22"
+      end         = "22"
+    },
+    {
+      description = "https"
+      start       = "443"
+      end         = "443"
     },
   ]
 
